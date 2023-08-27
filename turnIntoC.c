@@ -267,11 +267,8 @@ printf(“ERROR!”)
 
 a = 1
 
-Low-Level Optimizations
 
-Strength reduction
 
-Codes such as:
 
 y = x * 2
 y = x * 15
@@ -281,9 +278,8 @@ y = x * 15
 y = x + x
 y = (x << 4) - x
 
-Code block reordering
 
-Codes such as :
+
 
 if (a < 10) goto l1
 printf(“ERROR”)
