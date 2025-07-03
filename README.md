@@ -1,9 +1,6 @@
 # x86BackToC
 Turn a x86 binary back into C source code
 
-Post article:
-    
-https://maximilianfeldthusen.github.io/turn-a-x86-binary-executable-back-into-C-source-code/
 
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
     
@@ -11,8 +8,6 @@ https://maximilianfeldthusen.github.io/turn-a-x86-binary-executable-back-into-C-
 
 ---
 
-
----
 title: "Turn a x86 binary back into C code"
 layout: post
 date: 2023-05-25 22:44
