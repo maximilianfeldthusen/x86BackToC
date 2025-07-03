@@ -600,77 +600,7 @@ l1:
 printf(“ERROR”)
 goto l2
 
-Register allocation
-
-    Memory access is slower than registers.
-    Try to fit as many as local variables as possible in registers.
-    The mapping of local variables to stack location and registers is not constant.
-
-Instruction scheduling
-
-Assembly code like:
-
-mov eax, [esi]
-add eax, 1
-mov ebx, [edi]
-add ebx, 1
-
-Becomes:
-
-mov eax, [esi]
-mov ebx, [edi]
-add eax, 1
-add ebx, 1
-
-a = b + (z + 1)
-p = q + (z + 1)
-
-becomes
-
-temp = z + 1
-a = b + z
-p = q + z
-
-Constant folding and propagation
-
-The assignments:
-
-a = 3 + 5
-b = a + 1
-func(b)
-
-Becomes:
-
-func(9)
-
-Dead code elimination
-
-Delete unnecessary code:
-
-a = 1
-if (a < 0) {
-printf(“ERROR!”)
-}
-
-to
-
-a = 1
-
-Low-Level Optimizations
-
-Strength reduction
-
-Codes such as:
-
-y = x * 2
-y = x * 15
-
-Becomes:
-
-y = x + x
-y = (x << 4) - x
-
-Code block reordering
+Regiblock reordering
 
 Codes such as :
 
